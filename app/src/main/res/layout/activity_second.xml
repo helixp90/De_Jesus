@@ -210,7 +210,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button18"
+                android:id="@+id/btn10"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -219,7 +219,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button19"
+                android:id="@+id/btn11"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -228,7 +228,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/btn12"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -244,7 +244,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button21"
+                android:id="@+id/btn13"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -253,7 +253,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/btn14"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -262,7 +262,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button23"
+                android:id="@+id/btn15"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -271,7 +271,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button24"
+                android:id="@+id/btn16"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
