@@ -29,13 +29,13 @@
                 android:layout_width="95dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="Correct"
                 android:textColor="@color/white"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/correcttxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -74,13 +74,13 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="Incorrect"
                 android:textColor="@color/white"
                 tools:layout_editor_absoluteX="280dp"
                 tools:layout_editor_absoluteY="34dp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/incorrecttxt"
                 android:layout_width="116dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,7 +115,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -124,7 +124,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -133,7 +133,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -142,50 +142,7 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button12"
-                android:layout_width="wrap_content"
-                android:layout_height="103dp"
-                android:layout_weight="1"
-                android:background="@drawable/btndesign"
-                android:text="\???"
-                android:textColor="@color/white" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="wrap_content"
-                android:layout_height="103dp"
-                android:layout_weight="1"
-                android:background="@drawable/btndesign"
-                android:text="\???"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="wrap_content"
-                android:layout_height="103dp"
-                android:layout_weight="1"
-                android:background="@drawable/btndesign"
-                android:text="\???"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="wrap_content"
-                android:layout_height="103dp"
-                android:layout_weight="1"
-                android:background="@drawable/btndesign"
-                android:text="\???"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/button16"
+                android:id="@+id/btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"
@@ -201,7 +158,50 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button17"
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/btndesign"
+                android:text="\???"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/btndesign"
+                android:text="\???"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/btndesign"
+                android:text="\???"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/btndesign"
+                android:text="\???"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn9"
                 android:layout_width="wrap_content"
                 android:layout_height="103dp"
                 android:layout_weight="1"

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Documents\\Programs\\Android\\De_Jesus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "C:\\Users\\cocdejesus\\Documents\\De_Jesus\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\KHUYA\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6713a3385992ba3915ce74cd42b43534\\res\\values-ca\\values-ca.xml",
+                    "source": "C:\\Users\\cocdejesus\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6e099d1967eb2625ccf8bc7776d0e88f\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\KHUYA\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\68f50323e8071571c70ce02b68a51348\\res\\values-ca\\values-ca.xml",
+                    "source": "C:\\Users\\cocdejesus\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\b2331fb222b60f03e4cd4edd666f0ea5\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
