@@ -18,8 +18,9 @@ public class FirstActivity extends Activity {
 
     public void exit(View v) {
 
+        FirstActivity.this.finish();
 
-        System.exit(0);
+        //System.exit(0);
     }
 
     public void onClick(View v) {
