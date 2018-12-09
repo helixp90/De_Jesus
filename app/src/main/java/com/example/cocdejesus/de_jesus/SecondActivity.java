@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class SecondActivity extends Activity {
 
@@ -43,6 +46,9 @@ public class SecondActivity extends Activity {
 
         firststring = null;
         laststring = null;
+
+        firstbutton = null;
+        lastbutton = null;
 
         buttonid = new int[] {R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9, R.id.btn10,
                 R.id.btn11, R.id.btn12, R.id.btn13, R.id.btn14, R.id.btn15, R.id.btn16 };
@@ -108,17 +114,21 @@ public class SecondActivity extends Activity {
     public void game(View v) {
 
         try {
-            Button buttonx = findViewById(v.getId());
+            firstbutton = findViewById(v.getId());
 
-            buttonx.setEnabled(false);
+            //firstbutton = buttonx;
+
+            firstbutton.setEnabled(false);
 
             for (int i = 0; i < letters.size(); i++) {
 
                 if (buttons.get(i).getId() == v.getId()) {
 
                     firststring = letters.get(i);
-                    buttonx.setText(firststring);
-                    firstbutton = buttonx;
+                    firstbutton.setText(firststring);
+
+                    //Log.d("IT WAS ME BITCH", firstbutton.getText().toString());
+                    //firstbutton = buttonx;
 
                     Toast.makeText(this, firststring, Toast.LENGTH_SHORT).show();
                     break;
@@ -162,16 +172,24 @@ public class SecondActivity extends Activity {
                     firstbutton.setEnabled(true);
                     lastbutton.setEnabled(true);
 
+                    Log.d("DIO", firstbutton.getText().toString());
+                    Log.d("DIO", lastbutton.getText().toString());
+
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            firstbutton.setText("???");
+                            lastbutton.setText("???");
+
+                            firstbutton = null;
+                            lastbutton = null;
+
+                            firststring = null;
+                            laststring = null;
+                        }
+                    }, 3000);
 
 
-                    firstbutton.setText("???");
-                    lastbutton.setText("???");
-
-                    firstbutton = null;
-                    lastbutton = null;
-
-                    firststring = null;
-                    laststring = null;
                 }
 
             }
@@ -179,7 +197,7 @@ public class SecondActivity extends Activity {
 
         catch (Exception e) {
 
-            //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
