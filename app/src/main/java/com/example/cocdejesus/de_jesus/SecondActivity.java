@@ -3,6 +3,8 @@ package com.example.cocdejesus.de_jesus;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -29,6 +31,8 @@ public class SecondActivity extends Activity {
 
     public Button lastbutton, firstbutton;
 
+    public Handler handler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +52,8 @@ public class SecondActivity extends Activity {
         countdowntxt = findViewById(R.id.countdown);
         correct = findViewById(R.id.correcttxt);
         incorrect = findViewById(R.id.incorrecttxt);
+
+        handler = new Handler();
 
         try {
 
@@ -155,6 +161,8 @@ public class SecondActivity extends Activity {
 
                     firstbutton.setEnabled(true);
                     lastbutton.setEnabled(true);
+
+
 
                     firstbutton.setText("???");
                     lastbutton.setText("???");

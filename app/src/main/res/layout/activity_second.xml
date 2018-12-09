@@ -42,7 +42,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textPersonName"
-                android:text="Edit Text"
+                android:text="0"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -87,7 +87,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textPersonName"
-                android:text="Edit Text"
+                android:text="0"
                 android:textColor="@color/white" />
         </LinearLayout>
 
