@@ -120,6 +120,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -129,6 +130,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -138,6 +140,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -147,6 +150,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -163,6 +167,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -172,6 +177,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -181,6 +187,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -190,6 +197,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -206,6 +214,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -215,6 +224,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -224,6 +234,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -233,6 +244,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -249,6 +261,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -258,6 +271,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -267,6 +281,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
 
@@ -276,6 +291,7 @@
                 android:layout_height="103dp"
                 android:layout_weight="1"
                 android:background="@drawable/btndesign"
+                android:onClick="game"
                 android:text="\???"
                 android:textColor="@color/white" />
         </LinearLayout>
