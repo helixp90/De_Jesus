@@ -55,6 +55,8 @@ public class SecondActivity extends Activity {
 
         letters = Arrays.asList("A", "A", "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H");
 
+        buttons = new ArrayList<>();
+
         countdowntxt = findViewById(R.id.countdown);
         correct = findViewById(R.id.correcttxt);
         incorrect = findViewById(R.id.incorrecttxt);
@@ -75,16 +77,15 @@ public class SecondActivity extends Activity {
 
                 buttons.get(i).setText(letters.get(i));
 
+
             }
+
 
             new CountDownTimer(3000, 1000) {
 
                 public void onTick(long untilFinish) {
 
-                    for (int i = 0; i < buttons.size(); i++) {
-
-                        buttons.get(i).setEnabled(false);
-                    }
+                    setfalse();
 
                     countdowntxt.setText(String.valueOf(untilFinish / 1000));
 
@@ -130,7 +131,7 @@ public class SecondActivity extends Activity {
                     //Log.d("IT WAS ME BITCH", firstbutton.getText().toString());
                     //firstbutton = buttonx;
 
-                    Toast.makeText(this, firststring, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, firststring, Toast.LENGTH_SHORT).show();
                     break;
                 }
             }
@@ -140,44 +141,60 @@ public class SecondActivity extends Activity {
                 laststring = firststring;
                 lastbutton = firstbutton;
 
-                Toast.makeText(this, laststring, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, laststring, Toast.LENGTH_SHORT).show();
 
             }
 
             else {
 
+                setfalse();
+
                 if (firststring == laststring) {
 
-                    Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
 
                     ccounter++;
 
                     correct.setText(Integer.toString(ccounter));
 
-                    firstbutton = null;
-                    lastbutton = null;
+                    settrue(firstbutton, lastbutton);
 
-                    firststring = null;
-                    laststring = null;
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+
+                            firstbutton = null;
+                            lastbutton = null;
+
+                            firststring = null;
+                            laststring = null;
+                        }
+                    }, 2000);
 
                 }
 
                 else {
-                    Toast.makeText(this, "INCORRECT", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "INCORRECT", Toast.LENGTH_SHORT).show();
 
                     incounter++;
 
                     incorrect.setText(Integer.toString(incounter));
 
-                    firstbutton.setEnabled(true);
-                    lastbutton.setEnabled(true);
+                    //Log.d("DIO", firstbutton.getText().toString());
+                   // Log.d("DIO", lastbutton.getText().toString());
 
-                    Log.d("DIO", firstbutton.getText().toString());
-                    Log.d("DIO", lastbutton.getText().toString());
+
 
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
+
+
+
+                            insettrue();
+
+
                             firstbutton.setText("???");
                             lastbutton.setText("???");
 
@@ -187,10 +204,12 @@ public class SecondActivity extends Activity {
                             firststring = null;
                             laststring = null;
                         }
-                    }, 3000);
+                    }, 2000);
 
 
                 }
+
+
 
             }
         }
@@ -200,6 +219,44 @@ public class SecondActivity extends Activity {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
+
+    }
+
+    public void setfalse() {
+
+        for (int i = 0; i < buttons.size(); i++) {
+
+            buttons.get(i).setEnabled(false);
+        }
+    }
+
+    public void settrue(Button a, Button b) {
+
+        Log.d("SHIT SHIT SHIT", Integer.toString(a.getId()));
+
+        for (int i = 0; i < buttons.size(); i++) {
+
+           if (buttons.get(i) == a || buttons.get(i) == b) {
+
+              buttons.remove(i);
+           }
+
+           else {
+
+               buttons.get(i).setEnabled(true);
+           }
+
+        }
+
+    }
+
+
+    public void insettrue() {
+
+        for (int i = 0; i < buttons.size(); i++) {
+
+            buttons.get(i).setEnabled(true);
+        }
 
     }
 }
