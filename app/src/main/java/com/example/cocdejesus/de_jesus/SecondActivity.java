@@ -20,7 +20,7 @@ import java.util.TimerTask;
 
 public class SecondActivity extends Activity {
 
-    public int ccounter, incounter;
+    public int ccounter, incounter, buttoncounter;
 
     public int []buttonid;
 
@@ -43,6 +43,7 @@ public class SecondActivity extends Activity {
 
         ccounter = 0;
         incounter = 0;
+        buttoncounter = 0;
 
         firststring = null;
         laststring = null;
@@ -116,91 +117,117 @@ public class SecondActivity extends Activity {
     public void game(View v) {
 
         try {
-            firstbutton = findViewById(v.getId());
 
-            //firstbutton = buttonx;
+            buttoncounter++;
 
-            firstbutton.setEnabled(false);
+            if (buttoncounter < 3) {
 
-            for (int i = 0; i < letters.size(); i++) {
+                firstbutton = findViewById(v.getId());
 
-                if (buttons.get(i).getId() == v.getId()) {
+                //firstbutton = buttonx;
 
-                    firststring = letters.get(i);
-                    firstbutton.setText(firststring);
+                firstbutton.setEnabled(false);
 
-                    //Log.d("IT WAS ME BITCH", firstbutton.getText().toString());
-                    //firstbutton = buttonx;
+                for (int i = 0; i < letters.size(); i++) {
 
-                    //Toast.makeText(this, firststring, Toast.LENGTH_SHORT).show();
-                    break;
+                    if (buttons.get(i).getId() == v.getId()) {
+
+                        firststring = letters.get(i);
+                        firstbutton.setText(firststring);
+
+                        //Log.d("IT WAS ME BITCH", firstbutton.getText().toString());
+                        //firstbutton = buttonx;
+
+                        //Toast.makeText(this, firststring, Toast.LENGTH_SHORT).show();
+                        break;
+                    }
                 }
-            }
 
-            if (laststring == null) {
 
-                laststring = firststring;
-                lastbutton = firstbutton;
 
-                //Toast.makeText(this, laststring, Toast.LENGTH_SHORT).show();
+                Log.d("WTF", Integer.toString(buttoncounter));
 
-            }
+                if (laststring == null) {
 
-            else {
+                    laststring = firststring;
+                    lastbutton = firstbutton;
 
-                if (firststring == laststring) {
 
-                    //Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
 
-                    ccounter++;
-
-                    correct.setText(Integer.toString(ccounter));
-
-                    firstbutton = null;
-                    lastbutton = null;
-
-                    firststring = null;
-                    laststring = null;
+                    //Toast.makeText(this, laststring, Toast.LENGTH_SHORT).show();
 
                 }
 
                 else {
-                    //Toast.makeText(this, "INCORRECT", Toast.LENGTH_SHORT).show();
 
-                    incounter++;
 
-                    incorrect.setText(Integer.toString(incounter));
 
-                    //Log.d("DIO", firstbutton.getText().toString());
-                   // Log.d("DIO", lastbutton.getText().toString());
 
-                    Log.d("DIO", firstbutton.getText().toString());
-                    Log.d("DIO", lastbutton.getText().toString());
 
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
+                    if (firststring == laststring) {
 
-                            firstbutton.setEnabled(true);
-                            lastbutton.setEnabled(true);
+                        //Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
 
-                            firstbutton.setText("???");
-                            lastbutton.setText("???");
+                        ccounter++;
 
-                            firstbutton = null;
-                            lastbutton = null;
+                        correct.setText(Integer.toString(ccounter));
 
-                            firststring = null;
-                            laststring = null;
-                        }
-                    }, 2000);
+                        firstbutton = null;
+                        lastbutton = null;
+
+                        firststring = null;
+                        laststring = null;
+
+                        buttoncounter = 0;
+
+                    }
+
+                    else {
+                        //Toast.makeText(this, "INCORRECT", Toast.LENGTH_SHORT).show();
+
+                        incounter++;
+
+                        incorrect.setText(Integer.toString(incounter));
+
+                        //Log.d("DIO", firstbutton.getText().toString());
+                        // Log.d("DIO", lastbutton.getText().toString());
+
+                        //Log.d("DIO", firstbutton.getText().toString());
+                        //Log.d("DIO", lastbutton.getText().toString());
+
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                firstbutton.setEnabled(true);
+                                lastbutton.setEnabled(true);
+
+                                firstbutton.setText("???");
+                                lastbutton.setText("???");
+
+                                firstbutton = null;
+                                lastbutton = null;
+
+                                firststring = null;
+                                laststring = null;
+
+                                buttoncounter = 0;
+                            }
+                        }, 2000);
+
+
+                    }
+
+
 
 
                 }
 
 
-
             }
+
+
+
         }
 
         catch (Exception e) {

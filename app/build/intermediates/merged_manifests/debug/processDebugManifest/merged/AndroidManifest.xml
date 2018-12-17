@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.cocdejesus.de_jesus.SecondActivity" />
+        <activity android:name="com.example.cocdejesus.de_jesus.ThirdActivity" />
     </application>
 
 </manifest>

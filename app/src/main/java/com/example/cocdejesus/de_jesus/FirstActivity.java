@@ -25,7 +25,7 @@ public class FirstActivity extends Activity {
 
     public void onClick(View v) {
 
-        startActivity(new Intent(FirstActivity.this, SecondActivity.class));
+        startActivity(new Intent(FirstActivity.this, ThirdActivity.class));
 
     }
 
